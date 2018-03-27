@@ -1,0 +1,19 @@
+{
+  "name": "hzsagkol",
+  "version": "0.0.1",
+  "description": "",
+  "main": "bot.js",
+  "scripts": {
+    "test": "npm run bot.js"
+  },
+  "author": "HZSAGKOL",
+  "license": "ISC",
+  "dependencies": {
+    "ansi-styles": "^3.2.1",
+    "async-limiter": "^1.0.0",
+    "chalk": "^2.3.2",
+    "discord.js": "^11.3.2",
+    "moment": "^2.21.0",
+    "moment-duration-format": "^2.2.2"
+  }
+}
