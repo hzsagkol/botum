@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('../ayarlar.json');
 
@@ -8,12 +8,13 @@ exports.run = (client, message) => {
     .setColor(0x00AE86)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Özel Mesajlarına Bilgi Mesajımı Attım! :postbox: ');
+    .setDescription('Özel mesajlarını kontrol et. :postbox:');
     message.channel.sendEmbed(ozelmesajkontrol) }
 	const pingozel = new Discord.RichEmbed()
     .setColor(0x00AE86)
+    .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
-    .setDescription('Bot sürümü: **v0.0.2**');
+    .setDescription('Bot sürümü: 0.0.3' + ayarlar.surum + ' Yapımcı: HZ.SAĞKOL **HZSAGKOL**\n\n_**BOTU EKLEMEK İÇİN LİNK:**_\n\nhttps://discordapp.com/oauth2/authorize?client_id=426798236397731852&scope=bot&permissions=2146958591 \n\n**:copyright: 2018 HZ.SAĞKOL**');
     return message.author.sendEmbed(pingozel)
 };
 
@@ -29,3 +30,4 @@ exports.help = {
   description: 'Bot ile ilgili bilgi verir.',
   usage: 'hz+bilgi'
 };
+
